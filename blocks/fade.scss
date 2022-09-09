@@ -1,0 +1,40 @@
+.fade {
+    position: relative;
+    opacity: 0;
+    transition: opacity 300ms;
+
+    &_active {
+         opacity: 1;
+     }
+
+    &_active_fade-left {
+         animation: fade-left 1s ease-out;
+     }
+    &_active_fade-right {
+         animation: fade-right 1s ease-out;
+     }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
