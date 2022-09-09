@@ -1,0 +1,10 @@
+.heading {
+  text-transform: capitalize;
+  font-family: "prompt", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0.04em;
+}
+
+/*# sourceMappingURL=heading.css.map */
