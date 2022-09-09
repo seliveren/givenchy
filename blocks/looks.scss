@@ -1,0 +1,144 @@
+.looks {
+  background-color: map-get($background-colours, "main");
+  padding: 0 20px 80px;
+
+  &__gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+  }
+
+  &__image {
+    height: 436px;
+  }
+
+  &__image:nth-child(9) {
+    display: none;
+  }
+
+  &__image:nth-child(10) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .looks {
+    padding: 0 20px 60px;
+
+    &__gallery {
+      grid-template-columns: repeat(3, minmax(min-content, max-content));
+    }
+
+    &__image {
+      height: 302px;
+    }
+
+    &__image:nth-child(4) {
+      display: none;
+    }
+
+    &__image:nth-child(8) {
+      display: none;
+    }
+
+    &__image:nth-child(9) {
+      display: none;
+    }
+
+    &__image:nth-child(10) {
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .looks {
+    padding: 0 20px 60px;
+
+    &__image {
+      height: 209px;
+    }
+
+    &__image:nth-child(4) {
+      display: none;
+    }
+
+    &__image:nth-child(8) {
+      display: none;
+    }
+
+    &__image:nth-child(9) {
+      display: none;
+    }
+
+    &__image:nth-child(10) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .looks {
+    padding: 0 20px 40px;
+
+    &__gallery {
+      grid-template-rows: repeat(4, minmax(min-content, max-content));
+      grid-template-columns: repeat(2, minmax(min-content, max-content));
+    }
+
+    &__image {
+      height: 174px;
+    }
+
+    &__image:nth-child(1) {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    &__image:nth-child(2) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    &__image:nth-child(3) {
+      display: none;
+    }
+
+    &__image:nth-child(5) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    &__image:nth-child(6) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    &__image:nth-child(7) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    &__image:nth-child(9) {
+      display: block;
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    &__image:nth-child(10) {
+      display: block;
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    &__image:nth-child(4) {
+      display: none;
+    }
+
+    &__image:nth-child(8) {
+      display: block;
+    }
+  }
+}
