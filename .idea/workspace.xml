@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/images.js" afterDir="false" />
+    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="feat: add fade-in and fade-out effects and image-change in Looks section">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -71,8 +77,114 @@
       <workItem from="1661951497698" duration="193000" />
       <workItem from="1661951814852" duration="7210000" />
       <workItem from="1662128034667" duration="7355000" />
-      <workItem from="1662148142299" duration="46465000" />
+      <workItem from="1662148142299" duration="48690000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add images">
+      <created>1662704713564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662704713564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add font">
+      <created>1662705068749</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705068749</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add variables and mixins">
+      <created>1662705167692</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705167692</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: add footer">
+      <created>1662705249001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705249001</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: add header">
+      <created>1662705324040</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705324040</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add About section">
+      <created>1662705365931</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705365931</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add normalize">
+      <created>1662705429219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705429219</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: add form and buttons">
+      <created>1662705465595</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705465595</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add Looks section">
+      <created>1662705527455</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705527455</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: add Front-page section">
+      <created>1662705580678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705580678</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add Popup menu">
+      <created>1662705615138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705615138</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: add heading">
+      <created>1662705631174</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705631174</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: add main page style">
+      <created>1662705652917</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705652917</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: add paragraphs style">
+      <created>1662705674365</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705674365</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add fade-in and fade-out effects and image-change in Looks section">
+      <created>1662705809539</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662705809539</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,5 +200,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: add images" />
+    <MESSAGE value="feat: add font" />
+    <MESSAGE value="feat: add variables and mixins" />
+    <MESSAGE value="feat: add footer" />
+    <MESSAGE value="feat: add header" />
+    <MESSAGE value="feat: add About section" />
+    <MESSAGE value="feat: add normalize" />
+    <MESSAGE value="feat: add form and buttons" />
+    <MESSAGE value="feat: add Looks section" />
+    <MESSAGE value="feat: add Front-page section" />
+    <MESSAGE value="feat: add Popup menu" />
+    <MESSAGE value="feat: add heading" />
+    <MESSAGE value="feat: add main page style" />
+    <MESSAGE value="feat: add paragraphs style" />
+    <MESSAGE value="feat: add fade-in and fade-out effects and image-change in Looks section" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add fade-in and fade-out effects and image-change in Looks section" />
   </component>
 </project>
