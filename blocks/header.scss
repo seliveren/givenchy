@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 3;
+
+  &__text {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__text:hover {
+    color: $white;
+  }
+
+  &__image:hover path {
+    stroke: $white;
+  }
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    gap: 18px;
+    top: 16px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__image {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
