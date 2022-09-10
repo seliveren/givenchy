@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 900px;
   }
 
   &__sub-container {
@@ -42,19 +41,19 @@
   }
 
   &__image {
+    object-fit: cover;
     grid-column: 1;
     grid-row: 1/5;
     margin-left: 4px;
     width: 700px;
-    object-position: top 18px right 1px;
-    position: relative;
+    height: 900px;
+    object-position: right 1px;
     z-index: 1;
   }
 }
 
 @media screen and (max-width: 1439px) {
   .front-page {
-
     &__heading {
       font-size: 32px;
       line-height: 40px;
@@ -69,6 +68,7 @@
 
     &__image {
       width: 486px;
+      height: 646px;
       margin-left: -20px;
       object-position: initial;
     }
@@ -81,7 +81,6 @@
 
 @media screen and (max-width: 767px) {
   .front-page {
-
     &__heading {
       font-size: 24px;
       line-height: 32px;
@@ -96,6 +95,7 @@
 
     &__image {
       width: 320px;
+      height: 426px;
       margin: 0;
     }
 

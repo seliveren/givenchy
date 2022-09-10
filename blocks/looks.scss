@@ -11,6 +11,7 @@
 
   &__image {
     height: 436px;
+    width: 350px;
   }
 
   &__image:nth-child(9) {
@@ -24,7 +25,7 @@
 
 @media screen and (max-width: 1439px) {
   .looks {
-    padding: 0 20px 60px;
+    padding: 0 20px 61px;
 
     &__gallery {
       grid-template-columns: repeat(3, minmax(min-content, max-content));
@@ -32,6 +33,7 @@
 
     &__image {
       height: 302px;
+      width: 243px;
     }
 
     &__image:nth-child(4) {
@@ -59,6 +61,7 @@
 
     &__image {
       height: 209px;
+      width: 168px;
     }
 
     &__image:nth-child(4) {
@@ -90,6 +93,7 @@
 
     &__image {
       height: 174px;
+      width: 140px;
     }
 
     &__image:nth-child(1) {

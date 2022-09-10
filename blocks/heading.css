@@ -1,10 +1,17 @@
-.heading {
-  text-transform: capitalize;
-  font-family: "prompt", sans-serif;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 64px;
-  letter-spacing: 0.04em;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 3 |   font-family: $font-family;
+ *   |                ^^^^^^^^^^^^
+ *   '
+ *   heading.scss 3:16  root stylesheet */
 
-/*# sourceMappingURL=heading.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502    font-family: $font-family;\a   \2502                 ^^^^^^^^^^^^\a   \2575 \a   heading.scss 3:16  root stylesheet";
+}
