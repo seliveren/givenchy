@@ -318,6 +318,9 @@ template {
 }
 
 .page {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 1;
 }
@@ -336,7 +339,6 @@ template {
 }
 .popup__container {
   background-color: #000;
-  height: 100%;
   width: 480px;
   padding: 20px;
   position: relative;
@@ -345,7 +347,7 @@ template {
 .popup__menu-list {
   list-style-type: none;
   margin: 0;
-  padding: 313px 0 0;
+  padding: 293px 0 245px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -354,7 +356,7 @@ template {
   box-sizing: border-box;
 }
 .popup__menu-item {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -377,17 +379,16 @@ template {
 
 @media screen and (max-width: 767px) {
   .popup__container {
-    height: 360px;
     width: 100%;
     padding: 25px 20px 20px;
   }
   .popup__menu-list {
-    padding: 77px 0 0;
+    padding: 77px 0;
     gap: 40px;
   }
 }
 .paragraph {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   color: #0A0A0A;
   letter-spacing: 0;
 }
@@ -481,12 +482,11 @@ template {
   border: none;
   background-color: transparent;
   padding: 12px 24px;
-  height: 48px;
   box-sizing: border-box;
   min-width: 229px;
   width: 100%;
   color: #FFF;
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -495,7 +495,7 @@ template {
   outline: none;
 }
 .form__item::placeholder {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -555,15 +555,19 @@ template {
   line-height: 24px;
   letter-spacing: 0;
   color: #FFF;
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
 }
 
+@media screen and (max-width: 1220px) {
+  .form__label_checkbox {
+    padding-left: 3px;
+  }
+}
 @media screen and (max-width: 767px) {
   .form {
     gap: 22px;
   }
   .form__item {
-    height: 44px;
     padding: 12px 12px 10px 37px;
   }
   .form__item::placeholder {
@@ -576,12 +580,12 @@ template {
     line-height: 20px;
   }
   .form__label_checkbox {
-    gap: 13px;
+    gap: 10px;
   }
 }
 @media screen and (max-width: 525px) {
   .form__item {
-    padding: 12px 0 10px 0;
+    padding: 12px 0 8px;
   }
   .form__input-container_type_email {
     flex-direction: column;
@@ -590,15 +594,15 @@ template {
 .header {
   position: fixed;
   top: 20px;
-  left: 20px;
   display: flex;
   gap: 16px;
   justify-content: flex-start;
   align-items: center;
   z-index: 3;
+  margin-left: 20px;
 }
 .header__text {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -633,7 +637,7 @@ template {
 }
 .heading {
   text-transform: uppercase;
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 64px;
@@ -670,7 +674,6 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 900px;
 }
 .front-page__sub-container {
   display: flex;
@@ -680,7 +683,7 @@ template {
   z-index: 2;
 }
 .front-page__heading {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 64px;
@@ -692,7 +695,7 @@ template {
   width: 100%;
 }
 .front-page__subheading {
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 48px;
   font-weight: 500;
   line-height: 64px;
@@ -704,12 +707,13 @@ template {
   width: 100%;
 }
 .front-page__image {
+  object-fit: cover;
   grid-column: 1;
   grid-row: 1/5;
   margin-left: 4px;
   width: 700px;
-  object-position: top 18px right 1px;
-  position: relative;
+  height: 900px;
+  object-position: right 1px;
   z-index: 1;
 }
 
@@ -726,6 +730,7 @@ template {
   }
   .front-page__image {
     width: 486px;
+    height: 646px;
     margin-left: -20px;
     object-position: initial;
   }
@@ -746,6 +751,7 @@ template {
   }
   .front-page__image {
     width: 320px;
+    height: 426px;
     margin: 0;
   }
   .front-page__sub-container {
@@ -764,12 +770,11 @@ template {
   grid-row: 3/4;
   background-color: #0A0A0A;
   color: #FFF;
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
-  height: 48px;
   width: 350px;
   padding: 12px 24px;
   text-transform: uppercase;
@@ -781,11 +786,10 @@ template {
   cursor: pointer;
 }
 .button_type_submit {
-  height: 48px;
   width: 108px;
   padding: 12px 24px;
   background-color: #FFF;
-  font-family: "prompt", sans-serif;
+  font-family: "prompt", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -810,7 +814,6 @@ template {
 
 @media screen and (max-width: 767px) {
   .button_type_subscribe {
-    height: 44px;
     width: 280px;
     font-size: 14px;
     line-height: 20px;
@@ -823,7 +826,6 @@ template {
 }
 @media screen and (max-width: 525px) {
   .button_type_submit {
-    height: 44px;
     font-size: 14px;
     line-height: 20px;
     width: 100%;
@@ -1032,6 +1034,7 @@ template {
 }
 .looks__image {
   height: 436px;
+  width: 350px;
 }
 .looks__image:nth-child(9) {
   display: none;
@@ -1042,13 +1045,14 @@ template {
 
 @media screen and (max-width: 1439px) {
   .looks {
-    padding: 0 20px 60px;
+    padding: 0 20px 61px;
   }
   .looks__gallery {
     grid-template-columns: repeat(3, minmax(min-content, max-content));
   }
   .looks__image {
     height: 302px;
+    width: 243px;
   }
   .looks__image:nth-child(4) {
     display: none;
@@ -1069,6 +1073,7 @@ template {
   }
   .looks__image {
     height: 209px;
+    width: 168px;
   }
   .looks__image:nth-child(4) {
     display: none;
@@ -1093,6 +1098,7 @@ template {
   }
   .looks__image {
     height: 174px;
+    width: 140px;
   }
   .looks__image:nth-child(1) {
     grid-column: 1;

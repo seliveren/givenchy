@@ -1,18 +1,17 @@
-.paragraph {
-  font-family: "prompt", sans-serif;
-  color: #0A0A0A;
-}
-.paragraph_type_regular {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-}
-.paragraph_type_bold {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 44px;
-  letter-spacing: 0.02em;
-  margin: 0;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |   font-family: $font-family;
+ *   |                ^^^^^^^^^^^^
+ *   '
+ *   paragraph.scss 2:16  root stylesheet */
 
-/*# sourceMappingURL=paragraph.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502    font-family: $font-family;\a   \2502                 ^^^^^^^^^^^^\a   \2575 \a   paragraph.scss 2:16  root stylesheet";
+}

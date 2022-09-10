@@ -1,41 +1,41 @@
 .paragraph {
-    font-family: $font-family;
-    color: $jetBlack;
-    letter-spacing: 0;
+  font-family: $font-family;
+  color: $jetBlack;
+  letter-spacing: 0;
 
-    &_type_regular {
-        font-size: 20px;
-        font-weight: map-get($font-weights, "regular");
-        line-height: 32px;
-    }
+  &_type_regular {
+    font-size: 20px;
+    font-weight: map-get($font-weights, "regular");
+    line-height: 32px;
+  }
 
-    &_type_bold {
-        font-size: 32px;
-        font-weight: map-get($font-weights, "semibold");
-        line-height: 44px;
-        letter-spacing: 0.02em;
-        margin: 0;
-    }
+  &_type_bold {
+    font-size: 32px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
 
-    &_location_footer {
-        text-align: center;
-        color: $white;
-        margin: 0;
-        @include width-700;
-        align-self: center;
-    }
+  &_location_footer {
+    text-align: center;
+    color: $white;
+    margin: 0;
+    @include width-700;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .paragraph {
-        &_type_regular {
-            font-size: 16px;
-            line-height: 24px;
-        }
-
-        &_type_bold {
-            font-size: 20px;
-            line-height: 28px;
-        }
+  .paragraph {
+    &_type_regular {
+      font-size: 16px;
+      line-height: 24px;
     }
+
+    &_type_bold {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
 }

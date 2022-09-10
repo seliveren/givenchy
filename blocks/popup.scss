@@ -12,7 +12,6 @@
 
   &__container {
     background-color: $black;
-    height: 100%;
     width: 480px;
     padding: 20px;
     position: relative;
@@ -22,7 +21,7 @@
   &__menu-list {
     list-style-type: none;
     margin: 0;
-    padding: 313px 0 0;
+    padding: 293px 0 245px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -59,13 +58,12 @@
 @media screen and (max-width: 767px) {
   .popup {
     &__container {
-      height: 360px;
       width: 100%;
       padding: 25px 20px 20px;
     }
 
     &__menu-list {
-      padding: 77px 0 0;
+      padding: 77px 0;
       gap: 40px;
     }
   }

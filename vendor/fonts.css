@@ -1,10 +1,10 @@
 @font-face {
-  src: url("prompt/prompt-v10-latin-500.woff") format("woff"), url("prompt/prompt-v10-latin-500.woff2") format("woff2");
+  src: url("../vendor/prompt/prompt-v10-latin-500.woff") format("woff"), url("../vendor/prompt/prompt-v10-latin-500.woff2") format("woff2");
   font-family: "prompt";
   font-weight: 500;
 }
 @font-face {
-  src: url("prompt/prompt-v10-latin-regular.woff") format("woff"), url("prompt/prompt-v10-latin-regular.woff2") format("woff2");
+  src: url("../vendor/prompt/prompt-v10-latin-regular.woff") format("woff"), url("../vendor/prompt/prompt-v10-latin-regular.woff2") format("woff2");
   font-family: "prompt";
   font-weight: 400;
 }

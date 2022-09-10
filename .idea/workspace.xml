@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="fix: change code format and add alt tags for images.js">
+    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="fix: minor fixes according to review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/front-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/front-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/images.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/normalize.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/normalize.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/normalize.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +29,17 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,12 +61,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/seliveren/Desktop/givenchy&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -76,8 +92,10 @@
       <workItem from="1661951497698" duration="193000" />
       <workItem from="1661951814852" duration="7210000" />
       <workItem from="1662128034667" duration="7355000" />
-      <workItem from="1662148142299" duration="48690000" />
-      <workItem from="1662822388083" duration="2000" />
+      <workItem from="1662148142299" duration="56510000" />
+      <workItem from="1662793953069" duration="112000" />
+      <workItem from="1662794279886" duration="13993000" />
+      <workItem from="1662819661154" duration="1411000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add images">
       <created>1662704713564</created>
@@ -184,7 +202,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662705809539</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix: change div to span">
+      <created>1662707501797</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662707501797</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix: minor fixes according to review">
+      <created>1662818712565</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662818712565</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +249,12 @@
     <MESSAGE value="feat: add main page style" />
     <MESSAGE value="feat: add paragraphs style" />
     <MESSAGE value="feat: add fade-in and fade-out effects and image-change in Looks section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add fade-in and fade-out effects and image-change in Looks section" />
+    <MESSAGE value="fix: change div to span" />
+    <MESSAGE value="fix: minor fixes according to review" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: minor fixes according to review" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
