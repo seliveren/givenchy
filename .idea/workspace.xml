@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="feat: add fade-in and fade-out effects and image-change in Looks section">
+    <list default="true" id="d7593fac-16fb-457b-ad4e-1eb136e2ef9c" name="Changes" comment="fix: change code format and add alt tags for images.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +77,7 @@
       <workItem from="1661951814852" duration="7210000" />
       <workItem from="1662128034667" duration="7355000" />
       <workItem from="1662148142299" duration="48690000" />
+      <workItem from="1662822388083" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add images">
       <created>1662704713564</created>
