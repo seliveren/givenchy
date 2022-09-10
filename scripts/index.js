@@ -17,8 +17,6 @@ const itemsRight = document.querySelectorAll(".fade_right");
 const imageCollection = document.querySelectorAll('.looks__image');
 
 
-
-
 //functions
 
 //opening popup
@@ -33,11 +31,11 @@ function closePopup(popupElement) {
 
 /*smooth scroll to each section*/
 function scrollToSection(el) {
-    if(el === looksSection && window.innerWidth > 767) {
-    scroll({
-        top: el.offsetTop - 80,
-        behavior: "smooth"
-    });
+    if (el === looksSection && window.innerWidth > 767) {
+        scroll({
+            top: el.offsetTop - 80,
+            behavior: "smooth"
+        });
     } else if (el === looksSection && window.innerWidth < 767) {
         scroll({
             top: el.offsetTop - 40,
@@ -66,7 +64,7 @@ function fadeInLeft() {
 }
 
 function fadeInRight() {
-   for (let i = 0; i < itemsRight.length; i++) {
+    for (let i = 0; i < itemsRight.length; i++) {
         let distanceTop = itemsRight[i].getBoundingClientRect().top;
 
         if (distanceTop < window.innerHeight - 250) {
@@ -86,50 +84,48 @@ function shuffleArray(array) {
     }
 }
 
-function changeImage () {
-        setInterval(function () {
-            for (let i = 0; i <= 1; i++) {
-                shuffleArray(images)
-                let randomNum = Math.floor(Math.random() * images.length);
-                if (imageCollection[i].src !== images[i].src) {
-                    imageCollection[randomNum].src = images[i].src
-                }
+function changeImage() {
+    setInterval(function () {
+        for (let i = 0; i <= 1; i++) {
+            shuffleArray(images)
+            let randomNum = Math.floor(Math.random() * images.length);
+            if (imageCollection[i].src !== images[i].src) {
+                imageCollection[randomNum].src = images[i].src
             }
-        }, 2000);
+        }
+    }, 2000);
 }
 
 
-
-
 //eventListeners
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', function () {
     openPopup(popup);
 })
 
-menuText.addEventListener('click', function() {
+menuText.addEventListener('click', function () {
     openPopup(popup);
 })
 
-closeButton.addEventListener('click', function() {
+closeButton.addEventListener('click', function () {
     closePopup(popup);
 })
 
-aboutMenuItem.addEventListener('click', function() {
+aboutMenuItem.addEventListener('click', function () {
     closePopup(popup);
     scrollToSection(aboutSection);
 })
 
-looksMenuItem.addEventListener('click', function() {
+looksMenuItem.addEventListener('click', function () {
     closePopup(popup);
     scrollToSection(looksSection);
 })
 
-subscribeMenuItem.addEventListener('click', function() {
+subscribeMenuItem.addEventListener('click', function () {
     closePopup(popup);
     scrollToSection(subscribeSection);
 })
 
-subscribeButton.addEventListener('click', function() {
+subscribeButton.addEventListener('click', function () {
     scrollToSection(subscribeSection);
 })
 
@@ -137,7 +133,7 @@ window.addEventListener('scroll', fadeInLeft);
 
 window.addEventListener('scroll', fadeInRight);
 
-window.addEventListener('load',function() {
+window.addEventListener('load', function () {
     changeImage();
 });
 

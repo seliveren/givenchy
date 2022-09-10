@@ -10,7 +10,6 @@
     font-weight: map-get($font-weights, "semibold");
     line-height: 24px;
     letter-spacing: 0.02em;
-    height: 48px;
     width: 350px;
     padding: 12px 24px;
     text-transform: uppercase;
@@ -24,7 +23,6 @@
   }
 
   &_type_submit {
-    height: 48px;
     width: 108px;
     padding: 12px 24px;
     background-color: $white;
@@ -59,7 +57,6 @@
   .button {
 
     &_type_subscribe {
-      height: 44px;
       width: 280px;
       font-size: 14px;
       line-height: 20px;
@@ -76,7 +73,6 @@
 @media screen and (max-width: 525px) {
   .button {
     &_type_submit {
-      height: 44px;
       font-size: 14px;
       line-height: 20px;
       width: 100%;

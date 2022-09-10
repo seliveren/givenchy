@@ -1,5 +1,17 @@
-.button_location_front-page {
-  grid-row: 4/5;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 6 |     background-color: $jetBlack;
+ *   |                       ^^^^^^^^^
+ *   '
+ *   button.scss 6:23  root stylesheet */
 
-/*# sourceMappingURL=button.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502      background-color: $jetBlack;\a   \2502                        ^^^^^^^^^\a   \2575 \a   button.scss 6:23  root stylesheet";
+}
