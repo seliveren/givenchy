@@ -1,0 +1,70 @@
+.popup {
+  background-color: rgba($black, .4);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s ease-in-out;
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  &__container {
+    background-color: $black;
+    width: 480px;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  &__menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 293px 0 245px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 80px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  &__menu-item {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__menu-item:hover {
+    color: rgba($white, .4);
+    cursor: pointer;
+  }
+
+  &_opened {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .popup {
+    &__container {
+      width: 100%;
+      padding: 25px 20px 20px;
+    }
+
+    &__menu-list {
+      padding: 77px 0;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.front-page {
+  background-color: map-get($background-colours, "light");
+  position: relative;
+
+  &__main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+    z-index: 2;
+  }
+
+  &__heading {
+    font-family: $font-family;
+    font-size: 48px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    margin: -1px 0 0 -4px;
+    grid-row: 2/3;
+    grid-column: 2;
+    @include width-700;
+  }
+
+  &__subheading {
+    font-family: $font-family;
+    font-size: 48px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    margin: -38px 0 0 -4px;
+    grid-row: 2/3;
+    grid-column: 2;
+    @include width-700;
+  }
+
+  &__image {
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1/5;
+    margin-left: 4px;
+    width: 700px;
+    height: 900px;
+    object-position: right 1px;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .front-page {
+    &__heading {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    &__subheading {
+      font-size: 32px;
+      line-height: 40px;
+      max-width: 485px;
+      width: 100%;
+    }
+
+    &__image {
+      width: 486px;
+      height: 646px;
+      margin-left: -20px;
+      object-position: initial;
+    }
+
+    &__sub-container {
+      margin: 0 0 -3px -219px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .front-page {
+    &__heading {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    &__subheading {
+      font-size: 24px;
+      line-height: 32px;
+      max-width: 280px;
+      width: 100%;
+    }
+
+    &__image {
+      width: 320px;
+      height: 426px;
+      margin: 0;
+    }
+
+    &__sub-container {
+      margin: 0;
+      position: absolute;
+      top: 112px;
+      left: 24px;
+      z-index: 3;
+      gap: 42px;
+    }
+  }
+}

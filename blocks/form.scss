@@ -1,0 +1,158 @@
+.form {
+  max-width: 700px;
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  &__input-container {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__input-container_type_email {
+    border: 0.5px solid $white;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: none;
+    background-color: transparent;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    min-width: 229px;
+    width: 100%;
+    color: $white;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "regular");
+    line-height: 24px;
+  }
+
+  &__item:focus {
+    outline: none;
+  }
+
+  &__item::placeholder {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "regular");
+    line-height: 24px;
+    color: $doveGray;
+  }
+
+  &__checkbox {
+    padding: 6px 4px;
+    border: 1px solid $white;
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+  }
+
+  &__checkbox:hover {
+    border: 1px solid $jetBlack;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+  }
+
+  &__label input[type=checkbox] {
+    display: none;
+  }
+
+  &__label_checkbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-content: center;
+    @include width-700;
+  }
+
+  &__label input[type=checkbox]:checked + &__checkbox {
+    padding: 6px 4px;
+    background-image: url('../images/checked.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__label input[type=checkbox]:checked + &__checkbox:hover {
+    padding: 6px 4px;
+    background-image: url('../images/checked-black.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__label &__checkbox:hover path {
+    stroke: $jetBlack;
+  }
+
+  &__label input[type=checkbox]:disabled + &__checkbox {
+    background: #efefef;
+    color: $doveGray;
+  }
+
+  &__label-text {
+    max-width: 668px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "regular");
+    line-height: 24px;
+    letter-spacing: 0;
+    color: $white;
+    font-family: $font-family;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .form {
+    &__label_checkbox {
+      padding-left: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    gap: 22px;
+
+    &__item {
+      padding: 12px 12px 10px 37px;
+    }
+
+    &__item::placeholder {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+    }
+
+    &__label-text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__label_checkbox {
+      gap: 10px;
+
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .form {
+    &__item {
+      padding: 12px 0 8px;
+    }
+
+    &__input-container_type_email {
+      flex-direction: column;
+    }
+  }
+}

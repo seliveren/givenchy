@@ -1,0 +1,80 @@
+.button {
+  border: none;
+  
+  &_type_subscribe {
+    grid-row: 3/4;
+    background-color: $jetBlack;
+    color: $white;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    width: 350px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    margin: -13px 0 0 -4px;
+  }
+
+  &_type_subscribe:hover {
+    background-color: $white;
+    color: $jetBlack;
+    cursor: pointer;
+  }
+
+  &_type_submit {
+    width: 108px;
+    padding: 12px 24px;
+    background-color: $white;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: map-get($font-weights, "semibold");
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: $jetBlack;
+    text-transform: uppercase;
+  }
+
+  &_type_submit:hover {
+    background-color: $jetBlack;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &_type_close {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+  }
+
+  &_type_close:hover path {
+    stroke: $jetBlack;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    &_type_subscribe {
+      width: 280px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 13.5px;
+    }
+
+    &_type_close {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .button {
+    &_type_submit {
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
+  }
+}
